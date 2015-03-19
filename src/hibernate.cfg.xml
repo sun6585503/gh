@@ -1,0 +1,42 @@
+<?xml version='1.0' encoding='UTF-8'?>
+
+<!DOCTYPE hibernate-configuration PUBLIC "-//Hibernate/Hibernate Configuration DTD 3.0//EN" 
+
+"http://hibernate.sourceforge.net/hibernate-configuration-3.0.dtd">
+
+<hibernate-configuration>
+
+    <session-factory>
+
+               <!-- JDBC URL,User为数据库名 ; hsqldb.write_delay=false持久化 --> 
+        <property name="connection.url">jdbc:mysql://localhost:30000/nnm5</property> 
+        <!-- 设置数据库中的表用hibernate自动建立，一般不需要不断重新建表 --> 
+  
+       <property name="connection.username">root</property>
+
+       <property name="connection.password">OSSDB123</property>
+
+       <property name="connection.driver_class">com.mysql.jdbc.Driver</property>
+
+       <property name="dialect">org.hibernate.dialect.MySQLDialect</property>
+
+       <property name="show_sql">true</property>
+
+       <property name="connection.autocommit">true</property>
+
+       <property name="transaction.factory_class">org.hibernate.transaction.JDBCTransactionFactory</property>
+
+ 
+
+       
+
+       <mapping resource="com/sunkun/gh/domain/Hospital.hbm.xml" />
+       <!--  
+       <mapping resource="com/sunkun/gh/domain/Category.hbm.xml" />-->
+       <mapping resource="com/sunkun/gh/domain/Department.hbm.xml" />
+       
+
+    </session-factory>
+
+</hibernate-configuration>
+

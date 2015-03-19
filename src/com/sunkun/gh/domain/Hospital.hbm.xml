@@ -1,0 +1,18 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC 
+	"-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+	"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+	
+<hibernate-mapping>
+	<class name="com.sunkun.gh.domain.Hospital">
+		<id name="hospitalId"/>
+		<property name="hospitalName"/>
+		<property name="pageURl"/>
+		<property name="appointmentCycle"/>
+		<property name="startTime"/>
+		<property name="spicalRule"/>
+		<property name="level"/>
+		<property name="area"/>
+		<property name="manage"/>
+	</class>
+</hibernate-mapping>
